@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <link rel="icon" type="image/x-icon" href="img/emoji.png">
-  <title>Cryptography | Article</title>
+  <title>Cytology | Article</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,7 +21,7 @@
       <div class="navbar-header">
         <ul class="nav navbar-nav navbar-header">
           <li id="home">
-            <a href="index.html"><span><img src="img/emoji.png" width="20" height="20"></span> Cryptography</a>
+            <a href="index.html"><span><img src="img/emoji.png" width="20" height="20"></span> Cytology</a>
           </li>
         </ul>
       </div>
@@ -45,67 +45,16 @@
     <div class="col-sm-10">
       <article><font size="5">
         <p align="justify" style="text-indent:3em;">
-           In the video encryption algorithm, the logical exclusive disjunction will be performed between the bits in the stream cipher with the bits in the key. Video encryption algorithm can be modified depends on the type of needs of the video. The packages of data will be encrypted using the cipher block DES (Data Encryption Standard). The key function for DES is built by using the MD5 hash function. The modified video encryption algorithm can be defined as below.
-           <ol type="1" align="justify">
-             <li>The data flows for stream cipher aren't represented with bits anymore but with packages of data which are the results of the output from RTP Socket Adapter.</li>
-             <li>Each of the data package is encrypted using the secret key DES cryptography algorithm.</li>
-             <li>Before the key for encrypting the data packages is used by DES, it should be hashed first using the MD5 hash function.</li>
-           </ol>
-           Below is the global schema of the modified video encryption algorithm.
-           <ol type="1" align="justify">
-             <li>Take one of the data packages from the video file which are the output from RTP Socket Adapter.</li>
-             <li>The data package is encrypted using the DES cryptography algorithm. The input key for the DES is from the key which is resulted from the input key from the user's input that had been hashed before using MD5 hash function before.</li>
-             <li>The data package which had been encrypted is sent to the receiver.</li>
-             <li>Read the next data package and repeat the step from the first one.</li>
-           </ol>
-        </p>
-          <div class="row">
-              <div id="myCarousel" class="carousel slide" data-ride="carousel">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-              </ol><br>
 
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner">
-                <div class="item active">
-                  <center><img src="img/6.png" alt="encryption lock" width="700" height="300"></center>
-                </div>
-
-                <div class="item">
-                  <center><img src="img/7.png" alt="Los Angeles" width="700" height="300"></center>
-                </div>
-
-                <div class="item">
-                  <center><img src="img/8.png" alt="Los Angeles" width="700" height="300"></center>
-                </div>
-
-                <div class="item">
-                  <center><img src="img/9.png" alt="Los Angeles" width="700" height="300"></center>
-                </div>
-              </div>
-
-              <!-- Left and right controls -->
-              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div><br>
-        <p align="justify" style="text-indent:3em;">
-          The addition informations for the pictures in the carousel can be read in this paragraph. There are several video's formats that can be supported such as MPEG-1, Cinepak, H.261, H.263, Indeo32, Indeo41, MJPEGA (Motion JPEG-A), MJPEGB (Motion JPEG-B), and MJPEG (Motion JPEG). The function of media locator is to find the location of the string that had been given by the user. The processor is to read the file from media locator and make sure that the file is ready to be sent by send stream. The data source is the representation of the file that is ready to be sent by the send stream that has the format of RTP compliant.
         </p>
         <p align="justify" style="text-indent:3em;">
-          The RTP manager will initialize the connection and create the send stream object. Meanwhile, send stream will read the data source object and send all of the film's frames, including to organize the buffer usage for sending all of the frames. RTP Socket Adapter will take each of the frames from data source which is going to be sent to the encryptor to be decrypted. The encryptor's task is to encrypt all of the frames using the algorithm and the keyword that had been given. The encryptor is made using DES and the keyword will be changed using MD5 into a new keyword with the same length. The hashed key will be used as the key in DES algorithm. The encryptor will save the result of encryption in output stream buffer which will send all of the datas that are saved in the buffer.
+
         </p>
         <p align="justify" style="text-indent:3em;">
-          Now, this paragraph will discuss about the receiver. RTP manager is to create the receive stream. The receive stream will receive the RTP stream, then it is going to decrypt the data and change the RTP format into video format that can be played in the player. The input stream buffer receives the RTP stream, organizes the buffer usage for the receiving process, and sends the received data to the decryptor which will decrypt the data using the given key. Meanwhile, RTP socket adaptor changes the RTP format into the suitable format that can be read by the player. The player will receive the film format that can be played and create the controller to display the interface for user to set the events. Frame that is received by the player will be parsed and sent to the direct draw codec to be displayed in the monitor.
+
+        </p>
+        <p align="justify" style="text-indent:3em;">
+          
         </p>
       </article></font>
     </div>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <link rel="icon" type="image/x-icon" href="img/emoji.png">
-  <title>Cryptography | Article</title>
+  <title>Cytology | Article</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,7 +21,7 @@
       <div class="navbar-header">
         <ul class="nav navbar-nav navbar-header">
           <li id="home">
-            <a href="index.html"><span><img src="img/emoji.png" width="20" height="20"></span> Cryptography</a>
+            <a href="index.html"><span><img src="img/emoji.png" width="20" height="20"></span> Cytology</a>
           </li>
         </ul>
       </div>
@@ -42,8 +42,8 @@
   <div class="container">
     <div class="row">
       <br>
-      <h1 class="page-header">Multimedia Encryption
-        <small>(Video Encryption Algorithm)</small>
+      <h1 class="page-header">Digital Image Analysis
+        <small>(Computerized Breast Cancer Diagnosis)</small>
       </h1>
       <br>
     </div>
@@ -95,24 +95,27 @@
     <br><hr><br>
     <div class="col-sm-1"></div>
     <div class="col-sm-10">
-      <article><font size="5">
+      <article><font size="5"><h2><b>Introduction</b></h2><hr>
         <p align="justify" style="text-indent:3em;">
-          Nowadays, the safety of multimedia data can be considered as a very important thing in business. For example, video conferencing application only can be accessed by certain people that are involved in the conference. The same goes to video on demand, this kind of video only can be watched by people who pay for a certain amount to have an access for the video. To keep the data safe, we need to encrypt the multimedia. Multimedia encryption is the core enabling technology that provides confidentiality and prevents unauthorized access of the content. Real time constraints, large amount, and unique characteristics of multimedia data inhibits the use of traditional cryptographic algorithms over multimedia data.
+          Most breast masses can be accurately diagnosed from the cytological characteristics of their constituent cells. However, diagnostic accuracy depends on the training, experience, and various undefined factors of the person interpreting the cytology. In short, some people diagnose better than others. We previously developed a computer-based classification system which aids in diagnosing breast cells based on the visual assessment of cellular features. Cytological features, previously evaluated visually are now replaced by digitized ones, evaluated by image analysis. In this paper we compare human accuracy in the cytological diagnosis of breast cancer with the accuracy of digital image analysis combined with computer-based classification.
+        </p><br>
+        <h2><b>Materials and Methods</b></h2><hr>
+        <h3><b><i>Fine Needle Aspirates</b></i></h3>
+        <p align="justify" style="text-indent:3em;">
+          A small drop of viscous fluid was obtained from breast masses by making multiple passes with a 23 gauge needle while negative pressure was being applied to an attached syringe. The aspirated material was expressed onto a silane coated glass slide. A similar slide was placed face down on the aspirate, and the aspirate was spread as the slides were separated with a horizontal motion. Preparations were immediately fixed in 95% ethanol and processed after they were stained with hematoxylin and eosin.
         </p>
+        <h3><b><i>The Visual Assessment Process</b></i></h3>
         <p align="justify" style="text-indent:3em;">
-           There are several aspects that should be remembered when you want to encrypt a multimedia data. First of all, the encryption should be done real time and the size of the data is quite big. We should choose the right way to encrypt the multimedia data especially video because it can affect the user's experience in watching the video. The wrong move in applying the algorithm to encrypt the video can make the buffering more longer than usual and it will cause an inconvenience towards the user. Many people apply video encyption algorithm to encrypt their videos because it is compatible to be applied to video streaming. This algorithm is based on stream cipher or block cipher depends on the video's needs. The global schema of the algorithm can be defined as below.
-           <ol type="1" align="justify">
-             <li>Open the MPEG file.</li>
-             <li>Read the MPEG file and detect the frame type.</li>
-             <li>Read the stream bit from the frame.</li>
-             <li>The stream bit will be written directly to the destination file, only if the frame from the stream bit isn't frame type I.</li>
-             <li>If the stream bit is from frame I, then the system will perform logical exclusive disjunction of the bits.</li>
-             <li>Write the encryption result to the destination file.</li>
-             <li>Read the next frame and repeat the process from step 2 until the end of the file.</li>
-           </ol>
+          Machine learning for cytological diagnosis consists of two steps. First, we digitally define and extract cellular features from a cytological image of a sample. Second, an expert system diagnoses the sample on the basis of these features. The original version of this work used features which were visually evaluated from breast FNA. This method uses linear programming to generate separating planes that distinguish benign from malignant samples.
         </p>
+        <h3><b><i>The Automated Assessment Process</b></i></h3>
+        <b>Image Preparation</b><br>
         <p align="justify" style="text-indent:3em;">
-          Video encryption algorithm's secret key, k, will be generated randomly in bitstream with m length, and can be written as k = b<sub>1</sub>b<sub>2</sub>...b<sub>m</sub>. Meanwhile, the bitstream can be represented as S = ..s<sub>1</sub>...s<sub>2</sub>...s<sub>m</sub>...s<sub>m+1</sub>...s<sub>m+2</sub>...s<sub>2m</sub>... &emsp;(1). S<sub>i</sub> (i = 1,2,...) represents all of the bits. The encryption function itself can be represented as E<sub>k</sub>(S) = ...(b<sub>1</sub> &#8853; s<sub>1</sub>)...(b<sub>m</sub> &#8853; s<sub>m+1</sub>)...(b<sub>m</sub> &#8853; s<sub>2m</sub>). In this case, &oplus; represents logical exclusive disjunction operator.
+          The area on the aspirate slides that was imaged was selected for minimal nuclear overlap. Areas of apocrine metaplasia were avoided. The image for digital analysis was generated by a JVC TK-1070U color video camera mounted atop an Olympus microscope. The slide was projected into the camera with a 63x objective and a 25x ocular. The image was captured by a ComputerEyes/RT color frame grabber board (Digital Vision, Inc., Dedham MA 02026) as a 512x480 Targa file. The resulting image is stored in memory as a 2-dimensional array with each picture element (pixel) having a value between 0 and 255 representing the light intensity at that point.
+        </p>
+        <b>The User Interface</b><br>
+        <p align="justify" style="text-indent:3em;">
+          The first step in successfully analyzing the digital image is to specify the exact location of each cell nucleus. This is achieved through use of an interactive user interface developed using the X Window System and the Athena Widget Set on a DECstation 3100. The image is projected onto a computer screen, and the operator uses a mouse button to trace a rough outline of each visible cell nucleus. These outlines are shown in picture above in the carousel (1<sup>st</sup> picture).
         </p>
       </article></font>
     </div>
