@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="img/emoji.png">
+  <title>Cryptography | Article</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/modern-business.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top navbar-toggleable-xs" role="navigation">
+    <div class="container">
+
+      <div class="navbar-header">
+        <ul class="nav navbar-nav navbar-header">
+          <li id="home">
+            <a href="index.html"><span><img src="img/emoji.png" width="20" height="20"></span> Cryptography</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li id="folder" class="active">
+            <a href="folder.html"><span class="glyphicon glyphicon-folder-open"></span></a>
+          </li>
+          <li id="about">
+            <a href="about.html"><span class="glyphicon glyphicon-user"></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <br>
+      <h1 class="page-header">Multimedia Encryption
+        <small>(Video Encryption Algorithm)</small>
+      </h1>
+      <br>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <center><img src="img/lock.jpg" alt="encryption lock" width="1000" height="500"></center>
+          </div>
+
+          <div class="item">
+            <center><img src="img/images.jpeg" alt="Los Angeles" width="1000" height="500"></center>
+          </div>
+
+          <div class="item">
+            <center><img src="img/people.jpeg" alt="Los Angeles" width="1000" height="500"></center>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+  </div>
+
+  <div class="container">
+    <br><hr><br>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <article><font size="5">
+        <p align="justify" style="text-indent:3em;">
+          Nowadays, the safety of multimedia data can be considered as a very important thing in business. For example, video conferencing application only can be accessed by certain people that are involved in the conference. The same goes to video on demand, this kind of video only can be watched by people who pay for a certain amount to have an access for the video. To keep the data safe, we need to encrypt the multimedia. Multimedia encryption is the core enabling technology that provides confidentiality and prevents unauthorized access of the content. Real time constraints, large amount, and unique characteristics of multimedia data inhibits the use of traditional cryptographic algorithms over multimedia data.
+        </p>
+        <p align="justify" style="text-indent:3em;">
+           There are several aspects that should be remembered when you want to encrypt a multimedia data. First of all, the encryption should be done real time and the size of the data is quite big. We should choose the right way to encrypt the multimedia data especially video because it can affect the user's experience in watching the video. The wrong move in applying the algorithm to encrypt the video can make the buffering more longer than usual and it will cause an inconvenience towards the user. Many people apply video encyption algorithm to encrypt their videos because it is compatible to be applied to video streaming. This algorithm is based on stream cipher or block cipher depends on the video's needs. The global schema of the algorithm can be defined as below.
+           <ol type="1" align="justify">
+             <li>Open the MPEG file.</li>
+             <li>Read the MPEG file and detect the frame type.</li>
+             <li>Read the stream bit from the frame.</li>
+             <li>The stream bit will be written directly to the destination file, only if the frame from the stream bit isn't frame type I.</li>
+             <li>If the stream bit is from frame I, then the system will perform logical exclusive disjunction of the bits.</li>
+             <li>Write the encryption result to the destination file.</li>
+             <li>Read the next frame and repeat the process from step 2 until the end of the file.</li>
+           </ol>
+        </p>
+        <p align="justify" style="text-indent:3em;">
+          Video encryption algorithm's secret key, k, will be generated randomly in bitstream with m length, and can be written as k = b<sub>1</sub>b<sub>2</sub>...b<sub>m</sub>. Meanwhile, the bitstream can be represented as S = ..s<sub>1</sub>...s<sub>2</sub>...s<sub>m</sub>...s<sub>m+1</sub>...s<sub>m+2</sub>...s<sub>2m</sub>... &emsp;(1). S<sub>i</sub> (i = 1,2,...) represents all of the bits. The encryption function itself can be represented as E<sub>k</sub>(S) = ...(b<sub>1</sub> &#8853; s<sub>1</sub>)...(b<sub>m</sub> &#8853; s<sub>m+1</sub>)...(b<sub>m</sub> &#8853; s<sub>2m</sub>). In this case, &oplus; represents logical exclusive disjunction operator.
+        </p>
+      </article></font>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+
+  <ul class="pager">
+    <li><a href="folder.html"><span class="glyphicon glyphicon-folder-open"></span></a></li>
+    <li><a href="article2.html">Next &gt;&gt;</a></li>
+  </ul>
+
+  <div class="container">
+    <hr>
+    <footer>
+      <div class="row">
+        <div class="col-sm-12">
+          <p> Copyright &copy; Kezia Suhendra 2017</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/modern-business.js"></script>
+</body>
+</html>
